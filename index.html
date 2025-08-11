@@ -1,0 +1,56 @@
+<!-- 
+
+If wala pay understanding sa HTML structres and tags refer ani: https://www.w3schools.com/html/html_intro.asp
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Calculator by Charles Henry M. Tinoy Jr.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <main>
+        <h1>Simple Calculator By Charles Henry M. Tinoy Jr.</h1>
+        <div class="calculator">
+            <div>
+                <input type="text" class="text-input" id="mainInput" placeholder="0" readonly>
+            </div>
+            <div class="row">
+                <button type="button" onclick="insertValue('7')" class="primary-btn">7</button>
+                <button type="button" onclick="insertValue('8')" class="primary-btn">8</button>
+                <button type="button" onclick="insertValue('9')" class="primary-btn">9</button>
+                <button type="button" class="secondary-btn" onclick="addOperator('/')">&divide;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="insertValue('4')" class="primary-btn">4</button>
+                <button type="button" onclick="insertValue('5')" class="primary-btn">5</button>
+                <button type="button" onclick="insertValue('6')" class="primary-btn">6</button>
+                <button type="button" class="secondary-btn" onclick="addOperator('*')">&times;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="insertValue('1')" class="primary-btn">1</button>
+                <button type="button" onclick="insertValue('2')" class="primary-btn">2</button>
+                <button type="button" onclick="insertValue('3')" class="primary-btn">3</button>
+                <button type="button" class="secondary-btn" onclick="addOperator('-')">&minus;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="insertValue('0')" class="primary-btn">0</button>
+                <button type="button" onclick="insertValue('.')" class="primary-btn">&period;</button>
+                <button type="button" class="secondary-btn" onclick="equals()" id="equalsBtn">&equals;</button>
+                <button type="button" class="secondary-btn" onclick="addOperator('+')">&plus;</button>
+            </div>
+            <div class="row">
+                <button type="button" class="secondary-btn" onclick="clearInput()" style="width: 100%;">C</button>
+                <button type="button" class="secondary-btn" onclick="allClear()" style="width: 100%;">AC</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src='main.js'></script>
+</body>
+</html>
