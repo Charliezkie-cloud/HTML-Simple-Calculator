@@ -12,3 +12,5 @@
 1. Download the files
 2. Put them in the same directory (folder)
 3. Open `index.html` with your browser
+
+![528173964_1288547232871368_6858909622067396015_n](https://github.com/user-attachments/assets/a2d5bcd1-64ee-4af0-a087-c09edbef48fb)
